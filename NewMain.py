@@ -176,9 +176,16 @@ git difftool,
 IMPORTANT TO USE THIS WE DO NOT NEED TO USE 
 git add, because if we do then we will not see the changes in the file, we will only see the changes that have been staged, 
 so we need to use git diff before we add the changes to the staging area
+
+also if there are more files that have been modified we can use:
+git difftool --staged
+
 '''
 
 
 '''
-not changes 
+See in the history of the changements we have made to the repository using the following command:
+git log
+or
+git log --oneline --reverse (or without --reverse) to see the changes in a more visual way,
 '''
