@@ -165,15 +165,19 @@ git diff command.
 Example:
 git diff
 or 
-git difftool, this will open the code editor and show us the changes in a more visual way
-(This is configure in the terminal with this commands:
-git config --global diff.tool vscode
-diwsgen@fedora-dev:~$ git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
-diwsgen@fedora-dev:~$ git config --global -e
-the last command is only to verify that the changes have been made correctly
-)
+git difftool, 
+    this will open the code editor and show us the changes in a more visual way
+    (This is configure in the terminal with this commands:
+        git config --global diff.tool vscode
+        diwsgen@fedora-dev:~$ git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+        diwsgen@fedora-dev:~$ git config --global -e
+    the last command is only to verify that the changes have been made correctly)
 
+IMPORTANT TO USE THIS WE DO NOT NEED TO USE 
+git add, because if we do then we will not see the changes in the file, we will only see the changes that have been staged, 
+so we need to use git diff before we add the changes to the staging area
 '''
+
 
 '''
 not changes 
