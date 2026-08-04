@@ -126,4 +126,40 @@ log/
 (Or specify the name of the file to ignore, for example main.log)
 
 
+In github page there is a section called .gitignore templates, where we can find templates 
+for different programming languages and frameworks, we can use those templates to ignore files that are specific to those languages and frameworks
+
+IMPORTANT 
+
+if we have already added a file to the repository and we want to ignore it, 
+we need to remove it from the repository first using 
+
+git rm --cached <file_name> and then add it to the .gitignore file, 
+otherwise git will still track the file even if it is in the .gitignore file
+
+sometimes we will get an error but we can fix it using the following command:
+
+git rm --cached -r <file_name>, to remove a directory and all its contents from the repository
+
+And now the file will be ignored by git and will not be tracked anymore
+'''
+
+
+'''
+To see in a short way the changes we have made to the repository we can use the following command:
+git status -s
+
+this will show us the changes in a short way, for example:
+M  file1.txt
+A  file2.txt
+where M means modified and A means added
+
+'''
+
+'''
+Viewing the Stage & Unstage Changes
+
+
+
+
 '''
