@@ -163,10 +163,18 @@ See the exact lines that have been added or removed from a file using the
 git diff command.
 
 Example:
-git diff --staged
+git diff
+or 
+git difftool, this will open the code editor and show us the changes in a more visual way
+(This is configure in the terminal with this commands:
+git config --global diff.tool vscode
+diwsgen@fedora-dev:~$ git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+diwsgen@fedora-dev:~$ git config --global -e
+the last command is only to verify that the changes have been made correctly
+)
 
 '''
 
 '''
-Changes
+not changes 
 '''
