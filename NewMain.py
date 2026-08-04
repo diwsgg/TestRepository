@@ -107,3 +107,23 @@ AS above is not the best option, we can use the following command to rename a fi
 ******* git mv <old_file_name> <new_file_name> *******
 
 '''
+
+
+'''
+Now we wanted to know how to ignore files in our repository, for that we can use a file called .gitignore, 
+this file will contain the names of the files and directories that we want to ignore, 
+for example if we want to ignore all the .txt files we can add the following line to the .gitignore file:
+
+we can have a dir for this (this example), called logs
+where every file here is a log that we don't want to track, so we can add the following line to the .gitignore file:
+
+create a file called .gitignore in the command line with:
+echo "logs/" > .gitignore
+
+in the file we use:
+log/
+*.log
+(Or specify the name of the file to ignore, for example main.log)
+
+
+'''
