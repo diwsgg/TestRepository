@@ -1,10 +1,11 @@
 '''
-Test for git and github as new proyect
+Commands to use git in a new project
 '''
 
 '''
 As we know the first thing to initialize a new project is to create a new repository 
 to do this we use 
+
 git init
 
 then we can add files to the repository using
@@ -86,7 +87,7 @@ To sum up the steps to delete a file from the repository we can do the following
 
 BUT THIS IS NO THE BEST OPTION SO WE CAN USE
 
-git rm <file_name>
+******* git rm <file_name> *******
 and that will be the best option to remove a file from the repository since it will remove the file from the working directory and the staging area at the same time
 
 '''
@@ -103,6 +104,6 @@ git add <new_file_name>
 with this we have renamed the file and git will track the changes
 
 AS above is not the best option, we can use the following command to rename a file:
-git mv <old_file_name> <new_file_name>
+******* git mv <old_file_name> <new_file_name> *******
 
 '''
