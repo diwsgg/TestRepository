@@ -166,3 +166,7 @@ Example:
 git diff --staged
 
 '''
+
+'''
+Changes
+'''
