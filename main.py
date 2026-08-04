@@ -84,11 +84,25 @@ To sum up the steps to delete a file from the repository we can do the following
 4. Check the status of the repository using git status
 5. Commit the changes using git commit -m "removing file from the repository"
 
+BUT THIS IS NO THE BEST OPTION SO WE CAN USE
+
+git rm <file_name>
+and that will be the best option to remove a file from the repository since it will remove the file from the working directory and the staging area at the same time
+
 '''
 
 '''
-Now we will change the name of our file, for that we use:
+Now we will change the name of our file, for that we can use:
 
 mv <old_file_name> <new_file_name>
+this will delete the old file and create a new one with the new name, but we need to tell git that we have renamed the file, for that we can use:
+
+git add <old_file_name>
+git add <new_file_name>
+
+with this we have renamed the file and git will track the changes
+
+AS above is not the best option, we can use the following command to rename a file:
+git mv <old_file_name> <new_file_name>
 
 '''
