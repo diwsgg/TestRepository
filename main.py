@@ -40,6 +40,17 @@ With that we have successfully created a new project and pushed it to github
 
 '''
 
+
+'''
+WE have made some changes to the project and we want to push those changes to the remote repository, we can do that using the following steps:
+1. Check the status of the repository using git status
+2. Add the changes to the repository using git add <file_name>
+3. Commit the changes using git commit -m "commit message"
+4. Push the changes to the remote repository using git push
+
+'''
+
+
 '''
 To delete a file from the repository we can use the following command
 The first thing maybe we wanted to deleate a file using: rm file.txt 
@@ -75,12 +86,9 @@ To sum up the steps to delete a file from the repository we can do the following
 
 '''
 
-
 '''
-WE have made some changes to the project and we want to push those changes to the remote repository, we can do that using the following steps:
-1. Check the status of the repository using git status
-2. Add the changes to the repository using git add <file_name>
-3. Commit the changes using git commit -m "commit message"
-4. Push the changes to the remote repository using git push
+Now we will change the name of our file, for that we use:
+
+mv <old_file_name> <new_file_name>
 
 '''
