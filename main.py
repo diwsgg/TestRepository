@@ -41,6 +41,42 @@ With that we have successfully created a new project and pushed it to github
 '''
 
 '''
+To delete a file from the repository we can use the following command
+The first thing maybe we wanted to deleate a file using: rm file.txt 
+
+now we check the status 
+git status
+We remove the workind directory but stills exists in the staing area
+
+To remove it correctly we need to do:
+git ls-files
+
+This will show us the files that are being tracked by git, we can see that the file we want to delete is still being tracked by git, so we need to remove it 
+from the staging
+
+git add filename.txt
+
+again we run 
+git ls-files
+
+Now is in the staging area, we can see that the file is being tracked by git
+
+git status 
+we see now the file is in the staging area
+we commit this change
+git status -m "removing file from the repository"
+
+To sum up the steps to delete a file from the repository we can do the following:
+1. Remove the file from the working directory using rm <file_name>
+2. Check the status of the repository using git status
+3. Remove the file from the staging area using git add <file_name>
+4. Check the status of the repository using git status
+5. Commit the changes using git commit -m "removing file from the repository"
+
+'''
+
+
+'''
 WE have made some changes to the project and we want to push those changes to the remote repository, we can do that using the following steps:
 1. Check the status of the repository using git status
 2. Add the changes to the repository using git add <file_name>
