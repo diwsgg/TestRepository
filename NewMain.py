@@ -159,7 +159,10 @@ where M means modified and A means added
 '''
 Viewing the Stage & Unstage Changes
 
+See the exact lines that have been added or removed from a file using the
+git diff command.
 
-
+Example:
+git diff --staged
 
 '''
