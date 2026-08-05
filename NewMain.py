@@ -189,3 +189,13 @@ git log
 or
 git log --oneline --reverse (or without --reverse) to see the changes in a more visual way,
 '''
+
+'''
+Seeing a commit
+
+git show <commit_hash>, this commit_hash is on git log --oneline, this will show us the changes that have been made in that commit,
+Also if we do not have this hash or we wanted to do it in another way we can use
+
+git show HEAD~<number_of_commits>,
+example: git show HEAD~1, this will show us the changes that have been made in the last commit,
+'''
