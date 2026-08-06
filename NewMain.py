@@ -89,7 +89,7 @@ BUT THIS IS NO THE BEST OPTION SO WE CAN USE
 
 ******* git rm <file_name> *******
 and that will be the best option to remove a file from the repository since it will remove the file from the working directory and the staging area at the same time
-
+we need to commit the changes after this command to remove the file from the repository
 '''
 
 '''
@@ -105,6 +105,7 @@ with this we have renamed the file and git will track the changes
 
 AS above is not the best option, we can use the following command to rename a file:
 ******* git mv <old_file_name> <new_file_name> *******
+---- we only need to use after this the commit command to commit the changes
 
 '''
 
@@ -239,5 +240,9 @@ But again this is danguerous
 '''
 Restoring a file to a previous commit
 
-
+After we have deleting a file and we wanted to restore it to a previous commit we can use the following command:
+    git restore --source=HEAD~<number_of_commits> <file_name>
+or if was the last commit we can use:
+    git restore --source=HEAD~1 <file_name>
+And with that the file will be restored to the previous commit, we can check the status of the repository using git status and we will see that the file is in the staging area, so we need to commit the changes to restore the file to the repository
 '''
