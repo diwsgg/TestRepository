@@ -51,6 +51,20 @@ WE have made some changes to the project and we want to push those changes to th
 
 '''
 
+'''
+to repleace a text from a commit we made we can do this:
+
+Use 
+git commit --amend -m "new commit message"
+
+This will replace the last commit message with the new one, but we need to be careful when using this command since it will change 
+the commit history and if we have already pushed the changes to the remote repository 
+we will need to force push the changes using git push --force
+
+This proces is useful when we have made a mistake in the commit message and we want to correct it, 
+but we need to be careful when using this command, the recommendation is not to use it, and only if is need it then do it
+'''
+
 
 '''
 To delete a file from the repository we can use the following command
