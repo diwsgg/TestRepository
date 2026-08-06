@@ -221,7 +221,7 @@ git restore --staged <file_name>
 Discarding local Changes
 
 we can use: git clean 
-but this is dangurous because it will delete all the untracked files in the repository, 
+but this is dangerous because it will delete all the untracked files in the repository, 
 so we need to be careful when using this command, 
 we can use it with -n to see what files will be deleted without actually deleting them, for example:
 git clean -n
