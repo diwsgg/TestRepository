@@ -76,7 +76,7 @@ Now is in the staging area, we can see that the file is being tracked by git
 git status 
 we see now the file is in the staging area
 we commit this change
-git status -m "removing file from the repository"
+git commit -m "removing file from the repository"
 
 To sum up the steps to delete a file from the repository we can do the following:
 1. Remove the file from the working directory using rm <file_name>
@@ -245,4 +245,7 @@ After we have deleting a file and we wanted to restore it to a previous commit w
 or if was the last commit we can use:
     git restore --source=HEAD~1 <file_name>
 And with that the file will be restored to the previous commit, we can check the status of the repository using git status and we will see that the file is in the staging area, so we need to commit the changes to restore the file to the repository
+
+other version of git restore is
+git restore --source=<commit_hash> <file_name>
 '''
