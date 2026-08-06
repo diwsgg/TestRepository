@@ -263,3 +263,17 @@ And with that the file will be restored to the previous commit, we can check the
 other version of git restore is
 git restore --source=<commit_hash> <file_name>
 '''
+
+
+'''
+git reset --soft HEAD~1
+
+This command will reset the repository to the previous commit, but it will keep the changes 
+that we have made in the staging area, so we can commit them again if we want to, this is
+useful when we have made a mistake in the last commit and we want to correct it, 
+but we need to be careful when using this command since it will change the commit history 
+and if we have already pushed the changes to the remote repository we will need to force push the changes 
+using git push --force
+
+
+'''
