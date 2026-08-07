@@ -286,3 +286,6 @@ but we need to be careful when using this command since it can create merge conf
 in the two branches are conflicting, so we need to resolve the conflicts before we can commit the
 changes 
 '''
+
+
+#HEllo txt version
