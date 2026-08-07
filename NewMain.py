@@ -289,3 +289,11 @@ changes
 
 
 #HEllo txt version
+
+'''
+WE have two commands for the changes on the repository, 
+I mean
+*fetch* and *push*
+FETCH is for get the changes from the remote repository to our local repository,
+and PUSH is for send the changes from our local repository to the remote repository
+'''
