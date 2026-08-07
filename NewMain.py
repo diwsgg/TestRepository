@@ -277,3 +277,12 @@ using git push --force
 
 
 '''
+
+'''
+Im learning to merge branches, for that we can use the following command:
+git merge <branch_name>
+This command will merge the changes from the specified branch into the current branch,
+but we need to be careful when using this command since it can create merge conflicts if the changes
+in the two branches are conflicting, so we need to resolve the conflicts before we can commit the
+changes 
+'''
