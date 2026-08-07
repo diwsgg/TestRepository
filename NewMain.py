@@ -297,5 +297,8 @@ WE have two commands for the changes on the repository,
 I mean
 *fetch* and *push*
 FETCH is for get the changes from the remote repository to our local repository,
+but without combining the changes with our local changes,
+That's the difference between FETCH and PULL, 
+since PULL will get the changes from the remote repository and combine them with our local changes
 and PUSH is for send the changes from our local repository to the remote repository
 '''
