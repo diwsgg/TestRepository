@@ -295,7 +295,7 @@ changes
 '''
 WE have two commands for the changes on the repository, 
 I mean
-*fetch* and *push*
+*fetch* and *pull*
 FETCH is for get the changes from the remote repository to our local repository,
 but without combining the changes with our local changes,
 That's the difference between FETCH and PULL, 
